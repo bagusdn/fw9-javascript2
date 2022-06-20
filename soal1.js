@@ -5,17 +5,17 @@ console.log ("=========SLICE==========")
 const slice = item.slice(2,3)
 console.log(slice)
 
-//2. sort() => mengurutkan element dalam array
-console.log ("\n","=========SORT==========")
-const sort = item.sort()
-console.log (sort)
+//2. entries() => menampilkan key/value setipa index dalam sebuah array
+console.log ("\n","=========entries==========")
+const dataEntries = ['q','w','e','r']
+const iterator = dataEntries.entries() // dimasukkan kedalam sebuah variabel agar ketika di konsol hasillnya akan membaca pada indesx kedua
+console.log(iterator.next().value) //[ 0, 'q' ]
+console.log(iterator.next().value)//[ 1, 'w' ]
 
-//3. map() => membuat array baru hasil dari looping tsb
-console.log ("\n","======Map==========")
-const map = item.map((e) => {
-    return `${e}`
-});
-console.log (map)
+//3. Math.sqrt & Math.cbrt => Menampilkan hasil akar pangkat 2 & akar pangkat 3
+console.log ("\n","======Mathsqrt & mathcbrt=======")
+console.log(Math.sqrt(64))
+console.log(Math.cbrt(125))
 
 // 4.Concat => menggabungkan 2 array dan menjadi array baru
 newItem = ["Sage Mask","Rod of Atos"]
@@ -23,10 +23,9 @@ console.log ("\n","========concat=========")
 const result = item.concat(newItem)
 console.log(result)
 
-//5.push => menambahkan element baru ke bagian akhir array
-console.log ("\n","========Push=========")
-item.push("Blink Dagger")
-console.log(item)
+// 5. Math.PI => Menampilkan Nilai Pi
+console.log ("\n","======MathPI=======")
+console.log(Math.PI)
 
 // 6.unshift => menambahkan element baru ke bagian awal array
 console.log ("\n","=======Unshift=======")
@@ -54,11 +53,5 @@ item.forEach((e,i) => {
     console.log(`\n Menampilkan item ${e} dari index ke  ${i}` )
 });
 
-// 11. Math.PI => Menampilkan Nilai Pi
-console.log ("\n","======MathPI=======")
-console.log(Math.PI)
 
-//12. Math.sqrt & Math.cbrt => Menampilkan hasil akar pangkat 2 & akar pangkat 3
-console.log ("\n","======Mathsqrt & mathcbrt=======")
-console.log(Math.sqrt(64))
-console.log(Math.cbrt(125))
+
